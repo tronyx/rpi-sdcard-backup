@@ -13,7 +13,7 @@ wget https://raw.githubusercontent.com/tronyx/rpi-sdcard-backup/master/rpi-sdcar
 chmod a+x backup.sh
 ```
 
-### # Prerequisites
+### Prerequisites
 You will need to check the mount point of the SD Card as well just in case it is not the same as what I have listed below. You can check this by running:
 
 `sudo lsblk`
