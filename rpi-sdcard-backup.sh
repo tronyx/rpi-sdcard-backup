@@ -15,7 +15,7 @@
 # └─mmcblk0p2 179:2    0 29.8G  0 part /
 #
 # So my SD Card is /dev/mmcblk0 for the creation of the image. I attempt to get this information automatically with variables,
-# but you should check that it is correct before running the script.
+# but you should check that it is correct before running it.
 
 # Define some variables
 sdCardDisk=$(sudo lsblk | grep disk | awk '{print $1}')
