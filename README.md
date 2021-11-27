@@ -6,7 +6,7 @@ A Bash script to create an image file of the SD Card in a Raspberry Pi for backu
 
 ## Setting it up
 
-Download the script, made it executable, update and make sure the variables work for your Raspverry Pi per the comments in the script, and then run it.
+Download the script, made it executable, update and make sure the variables work for your Raspberry Pi per the comments in the script, and then run it.
 
 ```bash
 wget https://raw.githubusercontent.com/tronyx/rpi-sdcard-backup/master/rpi-sdcard-backup.sh
