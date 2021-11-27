@@ -38,3 +38,5 @@ Here is the cronjob that I use to run the script every Sunday morning at 5am:
 ## Run the rpi-sdcard-backup.sh script every Sunday at 5am
 0 5 * * 0 /home/tronyx/scripts/rpi-sdcard-backup.sh > /var/log/rpi-sdcard-backup.log
 ```
+
+The `> /var/log/rpi-sdcard-backup.log` at the end allows me to log the output of the script so I can check it if there was an issue while it ran overnight.
