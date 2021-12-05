@@ -10,7 +10,7 @@ Download the script, made it executable, update and make sure the variables work
 
 ```bash
 wget https://raw.githubusercontent.com/tronyx/rpi-sdcard-backup/master/rpi-sdcard-backup.sh
-chmod a+x backup.sh
+chmod a+x rpi-sdcard-backup.sh
 ```
 
 ### Prerequisites
