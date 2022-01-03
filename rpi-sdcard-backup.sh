@@ -71,12 +71,18 @@ create_image() {
     sudo dd if="${sdCardMountPoint}" of="${backupDirectory}"/raspberrypi-"${today}".img bs=1M
 }
 
+# Fatal cd command error function
+fatal() {
+    echo 'Cannot cd to the backup directory! Does it exist?'
+    exit
+}
+
 # Function to check, repair, and shrink disk image
 # This shrinks my image from ~30GB to ~2.5GB so it is worth doing
 shrink_image() {
     echo 'Shrinking image file. This can take some time...'
-    cd "${backupDirectory}" || echo 'Cannot cd to the backup directory! Does it exist?' && exit 1
-    sudo pishrink -z raspberrypi-"${today}".img
+    cd "${backupDirectory}" || fatal
+    sudo /usr/local/bin/pishrink -z raspberrypi-"${today}".img
 }
 
 # Function to cleanup old images from the backup directory based on the days variable specified at the top of the script
