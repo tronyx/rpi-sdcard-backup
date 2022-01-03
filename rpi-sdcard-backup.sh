@@ -75,8 +75,8 @@ create_image() {
 # This shrinks my image from ~30GB to ~2.5GB so it is worth doing
 shrink_image() {
     echo 'Shrinking image file. This can take some time...'
-    cd "${backupDirectory}" || echo 'Cannot cd to the backup directory! Does it exist?' exit 1
-    sudo pishrink.sh -z raspberrypi-"${today}".img
+    cd "${backupDirectory}" || echo 'Cannot cd to the backup directory! Does it exist?' && exit 1
+    sudo pishrink -z raspberrypi-"${today}".img
 }
 
 # Function to cleanup old images from the backup directory based on the days variable specified at the top of the script
